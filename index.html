@@ -29,6 +29,9 @@
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -65,14 +68,22 @@
                 </div>
             </div>
 
-            <button class="btn waves-effect waves-light lime darken-2" id="share">Share!</button>
+            <button class="btn waves-effect waves-light grey darken-2" id="share">Generic Share</button>
+            <button class="btn waves-effect waves-light lime darken-2" id="custom">Custom Share</button>
         </div>
 
-        <div id="working">
-            <label>Quedan: </label><br>
-            <p id="counter">3:00</p>
-            <button class="btn waves-effect waves-light red darken-1" id="stop">STOP</button><br />
-            <button class="btn waves-effect waves-light lime darken-2" id="clear">clear</button>
+        <div id="customShare">
+            <button class="btn waves-effect waves-light red darken-1" id="edit">Edit</button><br />
+
+            <button class="btn waves-effect waves-light light-blue darken-2" id="shareTwitter">
+                <i class="fa fa-twitter left"></i> Twitter
+            </button><br />
+            <button class="btn waves-effect waves-light indigo darken-4" id="shareFacebook">
+                <i class="fa fa-facebook left"></i> Facebook
+            </button><br />
+            <button class="btn waves-effect waves-light light-green accent-4" id="shareWhatsapp">
+                <i class="fa fa-whatsapp left"></i> Whatsapp
+            </button>
         </div>
     </div>
 
