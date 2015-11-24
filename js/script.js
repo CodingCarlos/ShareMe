@@ -91,7 +91,8 @@ function share(text, image, url, via) {
             break;
 
         default:
-            return window.plugins.socialsharing.share(text, null, img, url);
+            alert(window.plugins.socialsharing.share(text, null, img, url));
+            break;
     }
     
 }
