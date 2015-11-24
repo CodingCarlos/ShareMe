@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#fff">
+    <title>Share Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- <script src="http://192.168.1.43:8080/target/target-script-min.js#anonymous"></script> -->
+
+    <link rel="shortcut" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- APPLE META AND STYLES. CARRY OUT TO AN APPLE-ONLY HEADER (?) -->
+    <meta name="apple-mobile-web-app-title" content="LetsPitch">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"> <!--
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png"> 
+    <!-- -->
+
+    <link rel="stylesheet" type="text/css" href="css/material-font.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+</head>
+<body>
+
+    <h1><span class="white-text text-darken-1">Share Me</span></h1>
+
+    <div id="content">
+        <div id="form">
+            <!-- Text -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <label for="text">Text: </label>
+                    <textarea id="text" class="materialize-textarea"></textarea><br>
+                </div>
+            </div>
+
+            <!-- URL -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="url" type="text" class="validate">
+                    <label for="url">URL:</label>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="image_url" type="text" class="validate">
+                    <label for="image_url">Image from URL:</label>
+                </div>
+            </div>
+
+            <button class="btn waves-effect waves-light lime darken-2" id="share">Share!</button>
+        </div>
+
+        <div id="working">
+            <label>Quedan: </label><br>
+            <p id="counter">3:00</p>
+            <button class="btn waves-effect waves-light red darken-1" id="stop">STOP</button><br />
+            <button class="btn waves-effect waves-light lime darken-2" id="clear">clear</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#text').trigger('autoresize');
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+ 
+</body>
+</html>

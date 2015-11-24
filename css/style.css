@@ -1,0 +1,39 @@
+html, body {
+	background: #333;
+	color: #fff;
+	/*height: 100%;
+	width: 100%;*/
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#content {
+	margin-top: 32px;
+	text-align: center;
+}
+
+	#content button {
+		font-size: 2em;
+		height: auto;
+		margin-top: 32px;
+		padding: 8px 3rem; 
+	}
+		#content button#clear {
+			font-size: 1.3em;
+			margin-top: 16px;
+			padding: 4px 2rem; 
+		}
+
+	#content #working {
+		display: none;
+	}
+
+	#content p {
+		font-size: 3.5em;
+	    padding: 0;
+	    margin: 0;
+		font-weight: 400;
+	}
