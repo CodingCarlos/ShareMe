@@ -19,21 +19,21 @@ $('#edit').on('click', function() {
 $('#shareTwitter').on('click', function() {
     prepareShare(function(txt, img, url) {
         // Let's Share!!
-        share(txt, img, url);
+        share(txt, img, url, 'twitter');
     });
 });
 
 $('#shareFacebook').on('click', function() {
     prepareShare(function(txt, img, url) {
         // Let's Share!!
-        share(txt, img, url);
+        share(txt, img, url, 'facebook');
     });
 });
 
 $('#shareWhatsapp').on('click', function() {
     prepareShare(function(txt, img, url) {
         // Let's Share!!
-        share(txt, img, url);
+        share(txt, img, url, 'whatsapp');
     });
 });
 
@@ -55,6 +55,11 @@ function prepareShare(callback) {
  *  @param  via     Via to share (twitter, facebook...) Default: 'generic'
  */
 function share(text, image, url, via) {
+    console.log(text)
+    console.log(image)
+    console.log(url)
+    console.log(via)
+
     switch(via) {
         case "twitter":
             return window.plugins.socialsharing.shareViaTwitter(text, image, url);
