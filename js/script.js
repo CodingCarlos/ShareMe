@@ -91,8 +91,9 @@ function share(text, image, url, via) {
             break;
 
         default:
+            window.plugins.socialsharing.share('#LogroDesbloqueado "Compartidor: Comparte algo desde una app de forma magistral"', null, 'http://dev.gamify.es/mail/img/paracaidista.png', 'http://www.gamify.es');
+            //window.plugins.socialsharing.share(text, null, img, url);
             alert("Quero compartir cosas :'(");
-            window.plugins.socialsharing.share(text, null, img, url);
             break;
     }
     
