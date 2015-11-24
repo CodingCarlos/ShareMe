@@ -91,7 +91,8 @@ function share(text, image, url, via) {
             break;
 
         default:
-            alert(window.plugins.socialsharing.share(text, null, img, url));
+            alert("Quero compartir cosas :'(");
+            window.plugins.socialsharing.share(text, null, img, url);
             break;
     }
     
