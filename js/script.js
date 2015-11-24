@@ -55,10 +55,18 @@ function prepareShare(callback) {
  *  @param  via     Via to share (twitter, facebook...) Default: 'generic'
  */
 function share(text, image, url, via) {
-    console.log(text)
-    console.log(image)
-    console.log(url)
-    console.log(via)
+
+    if(image == '') {
+        image = null;
+    }
+
+    if(url == '') {
+        url = null;
+    }
+
+    if(typeof(via) == 'undefined') {
+        via = 'generic';
+    }
 
     switch(via) {
         case "twitter":
